@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Résumé des prix de location</title>
+</head>
+<body>
+    <h1>Résumé des prix de location</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Code de région</th>
+                <th>Nom</th>
+                <th>Prix moyen de location (Euros/m²)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for rental in rentals %}
+            <tr>
+                <td><a href="{{ url_for('detail', insee_c=rental.INSEE_C) }}">{{ rental.INSEE_C }}</a></td>
+                <td>{{ rental.LIBGEO }}</td>
+                <td>{{ rental.loypredm2 }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>

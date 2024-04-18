@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Détail des prix de location</title>
+</head>
+<body>
+    <h1>Détails de {{ rental.LIBGEO }}</h1>
+    <p>Prix moyen de location (Euros/m²): {{ rental.loypredm2 }}</p>
+    <p>Prix minimum de location (Euros/m²): {{ rental.lwr_IPm2 }}</p>
+    <p>Prix maximum de location (Euros/m²): {{ rental.upr_IPm2 }}</p>
+    <a href="{{ url_for('overview') }}">Retourner à la page de résumé</a>
+</body>
+</html>
