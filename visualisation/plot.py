@@ -3,8 +3,10 @@ import geopandas as gpd
 import matplotlib.pyplot as plt
 from mpl_toolkits.axes_grid1 import make_axes_locatable
 
+# Ce script doit être lancé a partir du dossier actuel, ici visualisation
+
 # Charger les données CSV dans un DataFrame
-df = pd.read_csv('pred-mai-mef-dhup-3.csv', delimiter=';', encoding='ISO-8859-1')
+df = pd.read_csv('../pred-mai-mef-dhup-3.csv', delimiter=';', encoding='ISO-8859-1')
 
 # Remplacer les virgules décimales françaises par des points pour convertir en flottant
 df['loypredm2'] = df['loypredm2'].str.replace(',', '.').astype(float)
