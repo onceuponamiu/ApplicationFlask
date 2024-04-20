@@ -1,0 +1,6 @@
+flask
+pandas
+Flask-SQLAlchemy
+geopandas
+matplotlib
+plotly
