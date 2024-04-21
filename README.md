@@ -48,24 +48,6 @@ Avant de commencer, assurez-vous d'avoir Python installé sur votre système. Ce
    pip install -r requirements.txt
    ```
 
-### Initialisation de la Base de Données
-
-Avant de lancer l'application pour la première fois, initialisez la base de données et chargez-la avec des données d'exemple à partir d'un fichier CSV :
-
-```bash
-flask run /init-db
-```
-
-== CHANGEMENT ICI ===
-```bash
-flask run 
-firefox http://127.0.0.1:5000/init-db
-```
-
-
-
-Cette commande crée les tables de la base de données et les remplit avec des données de `pred-mai-mef-dhup-3.csv`.
-
 ### Lancer l'Application
 
 Pour démarrer l'application Flask, utilisez la commande suivante :
