@@ -1,6 +1,6 @@
 # Projet d'Aperçu des Prix de Location
 
-Cette application Flask fournit un aperçu des prix de location par région, en utilisant une base de données SQLite pour stocker et gérer les données. Les utilisateurs peuvent voir une liste des régions avec les prix moyens de location et obtenir des informations détaillées sur les prix pour chaque région.
+Cette application Flask fournit un aperçu des prix de location de maison par commun, en utilisant une base de données SQLite pour stocker et gérer les données. Les utilisateurs peuvent voir une liste des régions avec les prix moyens de location et obtenir des informations détaillées sur les prix pour chaque région.
 
 ## Pour Commencer
 
